@@ -14,7 +14,7 @@ name:                Rally Racing Media
 title:               Rally Racing Media
 tagline:             'tagline'
 description:         'description'
-url:                 site url
+url:                 '/rally-racing-media/'
 rss:                 rss feed url
 baseurl:             '/rally-racing-media/'
 baseurl_posts_img:   '/rally-racing-media/assets/images/posts/'
