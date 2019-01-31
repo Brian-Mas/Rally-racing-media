@@ -10,7 +10,7 @@ relative_permalinks: false
 # Setup
 timezone:            Europe/Brussels # eg. Asia/Kathmandu
 locale:              en_us # eg. en_us
-name:				         Rally Racing Media
+name:                Rally Racing Media
 title:               Rally Racing Media
 tagline:             'tagline'
 description:         'description'
