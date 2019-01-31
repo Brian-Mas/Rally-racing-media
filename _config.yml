@@ -8,15 +8,15 @@ permalink:           /:title
 relative_permalinks: false
 
 # Setup
-timezone:            your timezone # eg. Asia/Kathmandu
-locale:              your locale language # eg. en_us
-name:				         site name
-title:               site title
+timezone:            Europe/Brussels # eg. Asia/Kathmandu
+locale:              en_us # eg. en_us
+name:				         Rally Racing Media
+title:               Rally Racing Media
 tagline:             'tagline'
 description:         'description'
 url:                 site url
 rss:                 rss feed url
-baseurl:             '/Rally-racing-media'
+baseurl:             '/rally-racing-media'
 baseurl_posts_img:   '/assets/images/posts/'
 baseurl_featured_img: '/assets/images/hero/'
 baseurl_featured_thumbnail: '/assets/images/thumbnail/'
