@@ -9,7 +9,7 @@ name:                Rally Racing Media
 title:               Rally Racing Media
 tagline:             'tagline'
 description:         'description'
-url:                 '/'
+url:                 'www.rallyracingmedia.com'
 rss:                 rss feed url
 baseurl:             '/'
 baseurl_posts_img:   '/assets/images/posts/'
@@ -22,7 +22,7 @@ disqus:              disqus_shortname # get it on https://disqus.com/admin/
 author:
   name:           	 Rally Racing Media
   url:            	 
-  facebook:          username
+  facebook:          RallyRacingMedia
   twitter:           username
   google_plus:       username
   linkedin:          username
