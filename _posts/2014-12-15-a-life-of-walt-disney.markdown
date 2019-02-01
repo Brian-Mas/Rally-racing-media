@@ -12,6 +12,7 @@ image:
 bgContrast: dark
 bgGradientOpacity: darker
 syntaxHighlighter: no
+permalink: /rally-racing-media/
 ---
 Source: [Wikipedia](https://en.wikipedia.org/wiki/Walt_Disney)
 
