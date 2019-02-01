@@ -11,7 +11,7 @@ tagline:             'tagline'
 description:         'description'
 url:                 'www.rallyracingmedia.com'
 rss:                 rss feed url
-baseurl:             '//'
+baseurl:             'rallyracingmedia.com'
 baseurl_posts_img:   '/assets/images/posts/'
 baseurl_featured_img: '/assets/images/hero/'
 baseurl_featured_thumbnail: '/assets/images/thumbnail/'
