@@ -254,6 +254,18 @@
   }
 }
 
+// Side bar home link
+.homeLink {
+  display: block;
+  color: rgba(255, 255, 255, 0.7);
+  text-align: center;
+  font-family: "Arial Black", Gadget, sans-serif;
+
+  &:hover {
+    color: rgba(255, 255, 255, 1);
+  }
+}
+
 // Left side menu
 
 .menuWrapper {
