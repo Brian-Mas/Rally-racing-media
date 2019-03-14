@@ -1,6 +1,7 @@
 //
 // Hero area
 // --------------------------------------------------
+$logo-padding: 15px;
 
 .section--first {
   width: 100%;
@@ -11,19 +12,34 @@
 
 .section--first,
 .section-backgroundImage {
-  height: 19 * $leading;
+  height: 4 * $leading;
 
   @media (max-width: $screen-xs-max) {
-    height: 14 * $leading;
+    height: 4 * $leading;
   }
 }
 
 .section--frontpage,
 .section--frontpage ~ .post-featuredImage {
-  height: 12 * $leading;
+  height: 4 * $leading;
+  //height: 140px;
 
   @media (max-width: $screen-xs-max) {
-    height: 10 * $leading;
+    height: 4 * $leading;
+    //height: 140px;
+  }
+}
+
+.section--frontpage {
+  & .site-title {
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100px;
+    top: $logo-padding;
+    left: $logo-padding;
+    width: 180px;
+    position: absolute;
+    z-index: 500;
   }
 }
 

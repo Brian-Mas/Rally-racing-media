@@ -1649,26 +1649,37 @@ body {
 
 .section--first,
 .section-backgroundImage {
-  height: 28.5rem;
+  height: 6rem;
 }
 
 @media (max-width: 767px) {
   .section--first,
   .section-backgroundImage {
-    height: 21rem;
+    height: 6rem;
   }
 }
 
 .section--frontpage,
 .section--frontpage ~ .post-featuredImage {
-  height: 18rem;
+  height: 6rem;
 }
 
 @media (max-width: 767px) {
   .section--frontpage,
   .section--frontpage ~ .post-featuredImage {
-    height: 15rem;
+    height: 6rem;
   }
+}
+
+.section--frontpage .site-title {
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100px;
+  top: 15px;
+  left: 15px;
+  width: 180px;
+  position: absolute;
+  z-index: 500;
 }
 
 .section--about,
@@ -1901,7 +1912,6 @@ body {
 .blockGroup-list {
   list-style: none;
   padding: 0;
-  margin-top: -4.5rem;
   margin-left: -10px;
   margin-right: -10px;
   display: -webkit-box;
