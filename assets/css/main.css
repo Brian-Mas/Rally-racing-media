@@ -1704,13 +1704,14 @@ body {
   top: 0;
   z-index: -200;
   overflow: hidden;
+  max-height: 150px;
 }
 
 .section-backgroundImage .post-featuredImage {
   min-width: 100%;
   min-height: 28.5rem;
   width: 2000px;
-  height: auto;
+  height: 150px;
   position: fixed;
   left: 50%;
   -webkit-transform: translateX(-50%);
