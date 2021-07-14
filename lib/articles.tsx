@@ -20,7 +20,6 @@ export const getAllArticlesPaths = () => {
 }
 
 export const getArticleData = async (year: string, id: string) => {
-    console.log('getArticleData', year, id);
     const fullPath = path.join(articleYearsDirectory, year, `${id}.md`);
     const fileContent = fs.readFileSync(fullPath, 'utf8');
 
@@ -42,8 +41,29 @@ export const getArticleData = async (year: string, id: string) => {
             title: string;
             facebookUrl: string;
             youtubeUrl: string;
+            imgurCoverImageId: string;
+            imgurAlbumId: string;
         })
     }
+}
+
+export const getRecentArticles = async (amount = 10) => {
+    const years = getYears();
+    const articles = [];
+
+    while (articles.length <= 10 && years.length) {
+        const articlesPerYear = getArticlesInfoForYear(years[years.length - 1])?.items;
+        articles.push(
+            ...(articlesPerYear.slice(0, Math.min(articlesPerYear.length, amount)))
+        );
+        years.splice(-1, 1);
+    }
+
+    return articles;
+}
+
+const getYears = () => {
+    return fs.readdirSync(articleYearsDirectory);
 }
 
 const getArticlesForYears = (years: string[]) => {
@@ -56,5 +76,11 @@ const getArticlesForYears = (years: string[]) => {
 
 const getArticlesForYear = (year: string) => {
     const directory = path.join(articleYearsDirectory, year);
-    return fs.readdirSync(directory).map(f => f.replace(/\.md$/, ''));
+    return fs.readdirSync(directory)
+        .map(f => f.replace(/\.md$/, ''));
+}
+
+const getArticlesInfoForYear = (year: string) => {
+    const directory = path.join(articleYearsDirectory, year, `${year}.json`);
+    return JSON.parse('' + fs.readFileSync(directory));
 }
